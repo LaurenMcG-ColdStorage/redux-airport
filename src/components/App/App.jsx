@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
+import AirlineForm from '../AirlineForm/AirlineForm';
+import AirlineTable from '../AirLineTable/AirLineTable';
 
 function App() {
 
   return (
     <div>
-      <h1>Redux Airport</h1>
-      <input placeholder='Airline Name' />
-      <button>Add Airline</button>
-      <table>{/* Airlines should be listed here */}</table>
+      <AirlineForm />
+      <table>
+        <AirlineTable />
+        {/* Airlines should be listed here */}
+      </table>
     </div>
   );
 }
